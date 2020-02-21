@@ -94,7 +94,15 @@ Container::getInstance()
 add_action( 'after_setup_theme', function () {
 
     register_nav_menus( array(
-        'header_nav',
-        'footer_nav'
+        'header_nav' => 'header_nav',
+		'footer_nav' => 'footer_nav'
     ) );
-} );
+});
+
+add_action('wp_enqueue_scripts', "sage_scripts");
+
+function sage_scripts() {
+
+    wp_enqueue_style('sage-style', get_stylesheet_uri());
+
+};

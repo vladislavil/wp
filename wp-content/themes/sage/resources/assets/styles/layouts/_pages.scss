@@ -1,0 +1,286 @@
+// .about__content {
+//    display: flex;
+//    padding-top: 30px;
+// }
+
+// .about__left {
+//    width: calc(59% - 150px);
+//    display: flex;
+//    flex-direction: column;
+//    justify-content: center;
+//    margin-right: calc(150/1920*100vw);
+// }
+
+// .about__title {
+//    color: #c4c4c4;
+//    font-family: Montserrat;
+//    font-size: calc(22/1920*100vw);
+//    font-weight: 500;
+//    letter-spacing: 3.08px;
+//    margin-bottom: 20px;
+// }
+
+// .about__subtitle {
+//    color: #000000;
+//    font-family: Montserrat;
+//    font-size: calc(30/1920*100vw);
+//    font-weight: 500;
+//    text-transform: uppercase;
+//    letter-spacing: 4.2px;
+//    margin-bottom: calc(45/1920*100vw);
+// }
+
+// .about__text {
+//    color: #5b5b5c;
+//    font-family: Montserrat;
+//    font-size: calc(22/1920*100vw);
+//    font-weight: 400;
+//    letter-spacing: 3.08px;
+//    margin-bottom: calc(54/1920*100vw);
+// }
+
+// .about__right {
+//    flex-grow: 1;
+//    width: 41%;
+// }
+
+// .about__wrapper {
+//    width: 100%;
+// }
+
+// .about__button {
+//    max-width: 295px;
+//    color: #000000;
+//    font-family: Montserrat;
+//    font-size: calc(18/1920*100vw);
+//    font-weight: 400;
+//    text-transform: uppercase;
+//    letter-spacing: 2.52px;
+//    border: 2px solid #000000;
+//    text-align: center;
+//    padding: 20px 0;
+//    transition: opacity 0.3s;
+// }
+
+// .about__button:hover {
+//    opacity: 0.7;
+// }
+
+
+// .next__content {
+//    display: flex;
+//    padding-top: 30px;
+// }
+
+// .next__right {
+//    width: calc(59% - 150px);
+//    display: flex;
+//    flex-direction: column;
+//    justify-content: center;
+// }
+
+// .next__title {
+//    color: #c4c4c4;
+//    font-family: Montserrat;
+//    font-size: calc(22/1920*100vw);
+//    font-weight: 500;
+//    letter-spacing: 3.08px;
+//    margin-bottom: 20px;
+// }
+
+// .next__subtitle {
+//    color: #000000;
+//    font-family: Montserrat;
+//    font-size: calc(30/1920*100vw);
+//    font-weight: 500;
+//    text-transform: uppercase;
+//    letter-spacing: 4.2px;
+//    margin-bottom: calc(45/1920*100vw);
+// }
+
+// .next__text {
+//    color: #5b5b5c;
+//    font-family: Montserrat;
+//    font-size: calc(22/1920*100vw);
+//    font-weight: 400;
+//    letter-spacing: 3.08px;
+//    margin-bottom: calc(54/1920*100vw);
+// }
+
+// .next__left {
+//    flex-grow: 1;
+//    width: 41%;
+//    margin-right: calc(150/1920*100vw);
+// }
+
+// .next__wrapper {
+//    width: 100%;
+// }
+
+// .feedback {
+//    background-color: #f4f4f4;
+// }
+
+// .feedback__content {
+//    display: flex;
+//    /* justify-content: space-between; */
+//    padding: calc(155/1920*100vw) 0;
+// }
+
+// .feedback__form {
+//    flex-grow: 1;
+// }
+
+// .feedback__inner {
+//    display: flex;
+//    justify-content: flex-end;
+// }
+
+// .feedback__title {
+//    color: #000000;
+//    font-family: Montserrat;
+//    font-size: calc(30/1920*100vw);
+//    font-weight: 500;
+//    line-height: 41px;
+//    text-transform: uppercase;
+//    letter-spacing: 4.2px;
+// }
+
+// .feedback__subtitle {
+//    color: #5b5b5c;
+//    font-family: Montserrat;
+//    font-size: calc(18/1920*100vw);
+//    font-weight: 400;
+//    letter-spacing: 2.52px;
+// }
+
+// .feedback__part{
+//    flex-basis: calc(305/1920*100vw);
+//    margin-right: calc(50/1920*100vw);
+//    background: transparent;
+//    flex-shrink: 0;
+// }
+
+// .feedback__input {
+//    width: 100%;
+//    padding: calc(28/1920*100vw);
+//    border: 2px solid #7a7a7a;
+//    outline: none;
+//    background: transparent;
+//    color: #3a4047;
+//    font-family: Montserrat;
+//    font-size: calc(22/1920*100vw);
+//    font-weight: 400;
+//    letter-spacing: 3.08px;
+// }
+
+// .feedback__input::placeholder {
+//    color: #3a4047;
+//    font-family: Montserrat;
+//    font-size: calc(22/1920*100vw);
+//    font-weight: 400;
+//    letter-spacing: 3.08px;
+// }
+
+// .feedback__button {
+//    display: block;
+//    flex-shrink: 0;
+//    flex-basis: 247px;
+//    background-color: #3a4047;
+//    border: none;
+//    outline: none;
+//    color: #ffffff;
+//    font-family: Montserrat;
+//    font-size: calc(22/1920*100vw);
+//    font-weight: 400;
+//    text-transform: uppercase;
+//    letter-spacing: 3.08px;
+//    cursor: pointer;
+//    transition: opacity 0.3s;
+// }
+
+// .feedback__button:hover {
+//    opacity: 0.7;
+// }
+
+// .cards__content {
+//    padding: calc(70/1920*100vw) 0;
+// }
+
+// .cards__title {
+//    color: #000000;
+//    font-family: Montserrat;
+//    font-size: calc(32/1920*100vw);
+//    font-weight: 700;
+//    text-align: center;
+//    text-transform: uppercase;
+//    letter-spacing: 7.2px;
+//    margin-bottom: 20px;
+// }
+
+// .cards__subtitle {
+//    max-width: 765px;
+//    margin: 0 auto 35px auto;
+//    color: #5b5b5c;
+//    font-family: Montserrat;
+//    font-size: calc(28/1920*100vw);
+//    text-align: center;
+//    font-weight: 500;
+//    letter-spacing: 4.2px;
+// }
+
+// .cards__row {
+//    display: flex;
+//    flex-wrap: nowrap;
+//    margin: 0 -17px;
+// }
+
+// .cards__card {
+//    margin: 0 17px;
+//    flex-basis: calc(50% - 34px);
+// }
+
+// .cards__inner {
+//    width: 100%;
+//    margin-bottom: 25px;
+// }
+
+// .cards__strong {
+//    margin-bottom: 25px;
+//    color: #000000;
+//    font-family: Montserrat;
+//    font-size: calc(19/1920*100vw);
+//    font-weight: 700;
+//    text-transform: uppercase;
+//    letter-spacing: 3px;
+// }
+
+// .cards__text {
+//    margin-bottom: 40px;
+//    color: #848484;
+//    font-family: Montserrat;
+//    font-size: calc(19/1920*100vw);
+//    font-weight: 400;
+//    line-height: 24px;
+//    letter-spacing: 3.8px;
+// }
+
+// .cards__button {
+//    max-width: 220px;
+//    padding: 25px 0;
+//    display: block;
+//    background-color: #dddcdc;
+//    color: #000000;
+//    font-family: Montserrat;
+//    font-size: calc(16/1920*100vw);
+//    font-weight: 500;
+//    text-align: center;
+//    text-transform: uppercase;
+//    letter-spacing: 3.2px;
+//    outline: none;
+//    transition: opacity 0.3s;
+// }
+
+// .cards__button:hover {
+//    opacity: 0.7;
+// }

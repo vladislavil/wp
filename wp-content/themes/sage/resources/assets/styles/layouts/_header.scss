@@ -1,107 +1,152 @@
-.header__nav li {
-  @extend .nav-item;
-}
+// .header__nav li {
+//   @extend .nav-item;
+// }
 
-.header__nav a {
-  @extend .nav-link;
-}
+// .header__nav a {
+//   @extend .nav-link;
+// }
 
-.header {
-  background-color: transparent;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  padding: calc(45 / 1920 * 100vw) 0;
-}
+// .header {
+//   background-color: transparent;
+//   position: absolute;
+//   top: 0;
+//   left: 0;
+//   width: 100%;
+//   padding: calc(45 / 1920 * 100vw) 0;
+// }
 
-.header__content {
-  display: flex;
-  justify-content: center;
-}
+// .header__content {
+//   display: flex;
+//   justify-content: center;
+// }
 
-.header__nav {
-  display: block;
-}
+// .header__nav {
+//   display: block;
+// }
 
-.header__list {
-  display: flex;
-}
+// .header__list {
+//   display: flex;
+// }
 
-.header__item {
-  margin-right: calc(100 / 1920 * 100vw);
-}
+// .header__item {
+//   margin-right: calc(100 / 1920 * 100vw);
+// }
 
-.header__item:last-child {
-  margin-right: 0;
-}
+// .header__item:last-child {
+//   margin-right: 0;
+// }
 
-.header__item a {
-  display: block;
-  color: #fff;
-  transition: opacity 0.3s;
-}
+// .header__item a {
+//   display: block;
+//   color: #fff;
+//   transition: opacity 0.3s;
+// }
 
-.header__item a:hover {
-  opacity: 0.7;
-  text-decoration: none;
-}
+// .header__item a:hover {
+//   opacity: 0.7;
+//   text-decoration: none;
+// }
 
-.banner {
-  display: flex;
-  background-image: url(../../images/bg.png);
-  width: 100%;
-  height: calc(1080 / 1920 * 100vw);
-  padding-top: calc(108 / 1920 * 100vw);
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-}
+// .banner {
+//   display: flex;
+//   background-image: url(../../images/bg.png);
+//   width: 100%;
+//   height: calc(1080 / 1920 * 100vw);
+//   padding-top: calc(108 / 1920 * 100vw);
+//   background-position: center;
+//   background-size: cover;
+//   background-repeat: no-repeat;
+// }
 
-.banner__content {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-grow: 1;
-}
+// .banner__content {
+//   display: flex;
+//   align-items: center;
+//   justify-content: center;
+//   flex-grow: 1;
+// }
 
-.banner__title {
-  color: #fff;
-  //font-family: Montserrat;
-  font-size: calc(100 / 1920 * 100vw);
-  font-weight: 700;
-  text-align: center;
-}
+// .banner__title {
+//   color: #fff;
+//   //font-family: Montserrat;
+//   font-size: calc(100 / 1920 * 100vw);
+//   font-weight: 700;
+//   text-align: center;
+// }
 
-.banner__text {
-  color: #fff;
-  //font-family: Montserrat;
-  font-size: calc(30 / 1920 * 100vw);
-  font-weight: 400;
-  letter-spacing: 4.2px;
-  margin-bottom: 20px;
-  text-align: center;
-}
+// .banner__text {
+//   color: #fff;
+//   //font-family: Montserrat;
+//   font-size: calc(30 / 1920 * 100vw);
+//   font-weight: 400;
+//   letter-spacing: 4.2px;
+//   margin-bottom: 20px;
+//   text-align: center;
+// }
 
-a.banner__button {
-  display: block;
-  border: 2px solid #fff;
-  text-transform: uppercase;
-  background: transparent;
-  color: #fff;
-  //font-family: Moncerrat;
-  font-size: calc(18 / 1920 * 100vw);
-  font-weight: 400;
-  //text-transform: uppercase;
-  letter-spacing: 2.52px;
-  max-width: 295px;
-  padding: calc(20 / 1920 * 100vw) 0;
-  margin: 0 auto;
-  text-align: center;
-  transition: opacity 0.3s;
-}
+// a.banner__button {
+//   display: block;
+//   border: 2px solid #fff;
+//   text-transform: uppercase;
+//   background: transparent;
+//   color: #fff;
+//   //font-family: Moncerrat;
+//   font-size: calc(18 / 1920 * 100vw);
+//   font-weight: 400;
+//   //text-transform: uppercase;
+//   letter-spacing: 2.52px;
+//   max-width: 295px;
+//   padding: calc(20 / 1920 * 100vw) 0;
+//   margin: 0 auto;
+//   text-align: center;
+//   transition: opacity 0.3s;
+// }
 
-a.banner__button:hover {
-  text-decoration: none;
-  opacity: 0.7;
-}
+// a.banner__button:hover {
+//   text-decoration: none;
+//   opacity: 0.7;
+// }
+
+// @media(max-width: 1300px) {
+//   .banner__title {
+//      font-size: calc(50/991*100vw);
+//   }
+
+//   .banner__text {
+//      font-size: calc(17/991*100vw);
+//   }
+
+//   a.banner__button {
+//      font-size: calc(15/991*100vw);
+//   }
+// }
+
+// @media(max-width: 767px) {
+
+//   .banner__title {
+//      font-size: calc(35/480*100vw);
+//   }
+
+//   .banner__text {
+//      font-size: calc(14/480*100vw);
+//   }
+
+//   a.banner__button {
+//      font-size: calc(12/480*100vw);
+//   }
+// }
+
+// @media(max-width: 480px) {
+
+//   .banner__title {
+//      font-size: calc(26/320*100vw);
+//   }
+
+//   .banner__text {
+//      font-size: calc(12/320*100vw);
+//   }
+
+//   a.banner__button {
+//      font-size: calc(11/320*100vw);
+//   }
+// }
+
