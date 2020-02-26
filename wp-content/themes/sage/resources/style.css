@@ -365,9 +365,6 @@
    opacity: 0.7;
 }
 
-.feedback__form {
-}
-
 .cards__content {
    padding: calc(70/1920*100vw) 0;
 }
@@ -723,7 +720,7 @@
    }
 
    .cards__subtitle {
-      font-size: ;
+      font-size: Arial, sans-serif;
    }
 
    .about__button {
