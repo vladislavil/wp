@@ -35,12 +35,12 @@
             <div class="cards__row">
             @php 
                   $posts = get_posts( array(
-                  'post_type' => 'attachment',
                   'numberposts' => -1,
                   'category_name' => 'cards',
                   'orderby'     => 'date',
                   'order'       => 'DESC',
-                  'post_type'   => 'post',
+                  'post_type'   => 'any ',
+                  'post_status' => 'any',
                   'suppress_filters' => true, // подавление работы фильтров изменения SQL запроса
                 ) );
 
@@ -49,15 +49,17 @@
             @endphp
             
               <div class="cards__card">
-              @php print_r(get_fields()) @endphp
+                  <!-- @php
+                    print_r(the_meta());
+                  @endphp -->
                   <div class="cards__inner">
-                    <img src="<?php the_field('card_img') ?>" class="cards__img">
+                    <img src="<?php $img = get_post_meta($post->ID); echo wp_get_attachment_image_url($img['card_img'][0], 'full') ?>" class="cards__img">
                   </div>
                   <h2 class="cards__strong">
-                    <?php the_field('card_title') ?>
+                    <?php echo $post->post_title ?> 
                   </h2>
                   <p class="cards__text">
-                    <?php the_field('card_text') ?>
+                    <?php $text = get_post_meta($post->ID); echo $text['card_text'][0] ?>
                   </p>
                   <a href="#" class="cards__button">
                     view photos

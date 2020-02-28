@@ -12,14 +12,14 @@
   </div>
 </header>
 <section class="main__banner">
-  <div class="banner">
+  <div class="banner" style="background: url('<?php the_field('banner_img') ?>')">
       <div class="banner__content">
         <div class="banner__wrapper">
             <h1 class="banner__title">
-              Business Travel
+              @php the_field('banner_title') @endphp
             </h1>
             <p class="banner__text">
-              For entrepreneurs and freelancers
+              @php the_field('banner_text') @endphp
             </p>
             <a href="#" class="banner__button">
               more info

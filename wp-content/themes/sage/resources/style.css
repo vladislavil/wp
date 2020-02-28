@@ -43,7 +43,7 @@
 
 .banner {
    display: flex;
-   background-image: url(assets/images/bg.png);
+   /* background-image: url(assets/images/bg.png); */
    width: 100%;
    height: calc(1080/1920*100vw);
    padding-top: calc(108/1920*100vw);
@@ -279,6 +279,10 @@
    letter-spacing: 2.52px;
 }
 
+.footer__date {
+   font: inherit;
+}
+
 .feedback {
    background-color: #f4f4f4;
 }
@@ -393,7 +397,7 @@
 
 .cards__row {
    display: flex;
-   flex-wrap: nowrap;
+   flex-wrap: wrap;
    margin: 0 -17px;
 }
 

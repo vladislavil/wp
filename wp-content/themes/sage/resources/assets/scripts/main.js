@@ -21,4 +21,15 @@ const routes = new Router({
 });
 
 // Load Events
-jQuery(document).ready(() => routes.loadEvents());
+jQuery(document).ready(
+  
+  () => { 
+    routes.loadEvents();
+    getDate();
+})
+
+const getDate = () => {
+  let $date = $('.footer__date');
+
+  $date.text(new Date().getFullYear());
+}

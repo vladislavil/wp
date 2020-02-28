@@ -105,4 +105,5 @@ function sage_scripts() {
 
     wp_enqueue_style('sage-style', get_stylesheet_uri());
 
+    wp_enqueue_script('sage-js', get_template_directory_uri() . '/assets/scripts/main.js');
 };
