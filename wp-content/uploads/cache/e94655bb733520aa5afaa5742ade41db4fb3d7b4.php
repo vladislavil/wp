@@ -10,7 +10,7 @@
       Business travel
     </h2>
     <div class="footer__inc">
-      Travel 2019 | All rights reserved
+      Travel <span class="footer__date">2019</span> | All rights reserved
     </div>
   </div>
 <!-- </footer>

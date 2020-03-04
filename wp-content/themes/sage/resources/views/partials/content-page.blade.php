@@ -22,6 +22,18 @@
   </div>
 </section>
 
+<section class="gallery">
+  <div class="container">
+    <h2 class="gallery__title">
+      @php the_field('gallery_title') @endphp
+    </h2>
+    <p class="gallery__description">
+      @php the_field('gallery_text') @endphp
+    </p>
+    <?php if( function_exists('photo_gallery') ) { echo photo_gallery(2); } ?>
+  </div>
+</section>
+
 <section class="cards">
   <div class="container">
       <div class="cards__content">

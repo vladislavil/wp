@@ -4,4 +4,6 @@
     <?php echo e(get_the_author()); ?>
 
   </a>
+  <?php echo "single.blade"; print_r(the_meta()) ?>
+
 </p>

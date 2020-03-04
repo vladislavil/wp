@@ -169,6 +169,31 @@
    opacity: 0.7;
 }
 
+.gallery {
+   padding: 20px 0;
+}
+
+.gallery__title {
+   margin-bottom: 15px;
+   color: #000000;
+   font-family: Montserrat;
+   font-size: calc(32/1920*100vw);
+   font-weight: 700;
+   text-transform: uppercase;
+   text-align: center;
+   letter-spacing: 7.2px;
+}
+
+.gallery__description {
+   max-width: 850px;
+   margin: 0 auto;
+   color: #5b5b5c;
+   font-family: Montserrat;
+   font-size: calc(28/1920*100vw);
+   font-weight: 500;
+   text-align: center;
+   letter-spacing: 4.2px;
+}
 
 .next__content {
    display: flex;
@@ -486,11 +511,11 @@
       font-size: calc(14/991*100vw);
    }
 
-   .cards__title {
+   .cards__title, .gallery__title {
       font-size: calc(28/991*100vw);
    }
 
-   .cards__text {
+   .cards__text, .gallery__description {
       font-size: calc(14/991*100vw);
    }
 
@@ -506,7 +531,7 @@
       font-size: calc(14/991*100vw);
    }
 
-   .footer__link {
+   .footer__item > a {
       font-size: calc(16/991*100vw);
    }
 
@@ -614,7 +639,7 @@
    .cards__strong {
       font-size: calc(12/480*100vw);
    }
-   .cards__text {
+   .cards__text, .gallery__description {
       font-size: calc(12/480*100vw);
    }
 
@@ -630,11 +655,11 @@
       font-size: calc(11/480*100vw);
    }
 
-   .footer__link {
+   .footer__item > a {
       font-size: calc(13/480*100vw);
    }
 
-   .cards__title {
+   .cards__title, .gallery__title {
       font-size: calc(19/480*100vw);
    }
 
@@ -715,7 +740,7 @@
    .cards__strong {
       font-size: calc(11/320*100vw);
    }
-   .cards__text {
+   .cards__text, .gallery__description {
       font-size: calc(11/320*100vw);
    }
 
@@ -731,7 +756,7 @@
       font-size: calc(11/320*100vw);
    }
 
-   .footer__link {
+   .footer__item > a {
       font-size: calc(12/320*100vw);
    }
 
