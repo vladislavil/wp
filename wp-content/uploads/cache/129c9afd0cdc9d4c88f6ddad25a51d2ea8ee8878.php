@@ -30,7 +30,7 @@
     <p class="gallery__description">
       <?php the_field('gallery_text') ?>
     </p>
-    <?php if( function_exists('photo_gallery') ) { echo photo_gallery(2); } ?>
+    <?php if( function_exists('photo_gallery') ) { echo photo_gallery(4); } ?>
   </div>
 </section>
 
