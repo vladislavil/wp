@@ -30,7 +30,54 @@
     <p class="gallery__description">
       <?php the_field('gallery_text') ?>
     </p>
-    <?php if( function_exists('photo_gallery') ) { echo photo_gallery(4); } ?>
+      <!-- Slider main container -->
+    <div class="swiper-container">
+    <!-- Additional required wrapper -->
+      <div class="swiper-wrapper">
+        <!-- Slides -->
+        <div class="swiper-slide">
+            <div id="gallery">
+              <img alt="image" data-description="image" data-image="<?php echo get_template_directory_uri(); ?>/assets/images/pablo-garcia-saldana-PO8hhUKuegI-unsplash.png" scr="<?php echo get_template_directory_uri(); ?>/assets/images/pablo-garcia-saldana-PO8hhUKuegI-unsplash.png">
+              <img alt="image" data-description="image" data-image="<?php echo get_template_directory_uri(); ?>/assets/images/yap-chin-kuan-vpHdVI4jaec-unsplash.png" src="<?php echo get_template_directory_uri(); ?>/assets/images/yap-chin-kuan-vpHdVI4jaec-unsplash.png">
+              <img alt="image" data-description="image" data-image="<?php echo get_template_directory_uri(); ?>/assets/images/luca-bravo-ny6qxqv_m04-unsplash.png" src="<?php echo get_template_directory_uri(); ?>/assets/images/luca-bravo-ny6qxqv_m04-unsplash.png">
+              <img alt="image" data-description="image" data-image="<?php echo get_template_directory_uri(); ?>/assets/images/peter-jan-rijpkema-MRc3pofrhPg-unsplash.png" src="<?php echo get_template_directory_uri(); ?>/assets/images/peter-jan-rijpkema-MRc3pofrhPg-unsplash.png">
+              <img alt="image" data-description="image" data-image="<?php echo get_template_directory_uri(); ?>/assets/images/jason-zeis-msrYP_9jLvQ-unsplash.png" src="<?php echo get_template_directory_uri(); ?>/assets/images/jason-zeis-msrYP_9jLvQ-unsplash.png">
+              <img alt="image" data-description="image" data-image="<?php echo get_template_directory_uri(); ?>/assets/images/anders-jilden-cYrMQA7a3Wc-unsplash.png" src="<?php echo get_template_directory_uri(); ?>/assets/images/anders-jilden-cYrMQA7a3Wc-unsplash.png">
+              <img alt="image" data-description="image" data-image="<?php echo get_template_directory_uri(); ?>/assets/images/paul-trienekens-cYW4ROUmzzQ-unsplash.png" src="<?php echo get_template_directory_uri(); ?>/assets/images/paul-trienekens-cYW4ROUmzzQ-unsplash.png">
+              <img alt="image" data-description="image" data-image="<?php echo get_template_directory_uri(); ?>/assets/images/tim-swaan-eOpewngf68w-unsplash.png" src="<?php echo get_template_directory_uri(); ?>/assets/images/tim-swaan-eOpewngf68w-unsplash.png">
+              <img alt="image" data-description="image" data-image="<?php echo get_template_directory_uri(); ?>/assets/images/mona-eendra-1_iFcWLcaOI-unsplash.png" src="<?php echo get_template_directory_uri(); ?>/assets/images/mona-eendra-1_iFcWLcaOI-unsplash.png">
+            </div>
+        </div>
+        <div class="swiper-slide">
+            <div id="gallery1">
+              <img alt="image" data-description="image" data-image="<?php echo get_template_directory_uri(); ?>/assets/images/pablo-garcia-saldana-PO8hhUKuegI-unsplash.png" scr="<?php echo get_template_directory_uri(); ?>/assets/images/pablo-garcia-saldana-PO8hhUKuegI-unsplash.png">
+              <img alt="image" data-description="image" data-image="<?php echo get_template_directory_uri(); ?>/assets/images/yap-chin-kuan-vpHdVI4jaec-unsplash.png" src="<?php echo get_template_directory_uri(); ?>/assets/images/yap-chin-kuan-vpHdVI4jaec-unsplash.png">
+              <img alt="image" data-description="image" data-image="<?php echo get_template_directory_uri(); ?>/assets/images/luca-bravo-ny6qxqv_m04-unsplash.png" src="<?php echo get_template_directory_uri(); ?>/assets/images/luca-bravo-ny6qxqv_m04-unsplash.png">
+              <img alt="image" data-description="image" data-image="<?php echo get_template_directory_uri(); ?>/assets/images/peter-jan-rijpkema-MRc3pofrhPg-unsplash.png" src="<?php echo get_template_directory_uri(); ?>/assets/images/peter-jan-rijpkema-MRc3pofrhPg-unsplash.png">
+              <img alt="image" data-description="image" data-image="<?php echo get_template_directory_uri(); ?>/assets/images/jason-zeis-msrYP_9jLvQ-unsplash.png" src="<?php echo get_template_directory_uri(); ?>/assets/images/jason-zeis-msrYP_9jLvQ-unsplash.png">
+              <img alt="image" data-description="image" data-image="<?php echo get_template_directory_uri(); ?>/assets/images/anders-jilden-cYrMQA7a3Wc-unsplash.png" src="<?php echo get_template_directory_uri(); ?>/assets/images/anders-jilden-cYrMQA7a3Wc-unsplash.png">
+              <img alt="image" data-description="image" data-image="<?php echo get_template_directory_uri(); ?>/assets/images/paul-trienekens-cYW4ROUmzzQ-unsplash.png" src="<?php echo get_template_directory_uri(); ?>/assets/images/paul-trienekens-cYW4ROUmzzQ-unsplash.png">
+              <img alt="image" data-description="image" data-image="<?php echo get_template_directory_uri(); ?>/assets/images/tim-swaan-eOpewngf68w-unsplash.png" src="<?php echo get_template_directory_uri(); ?>/assets/images/tim-swaan-eOpewngf68w-unsplash.png">
+              <img alt="image" data-description="image" data-image="<?php echo get_template_directory_uri(); ?>/assets/images/mona-eendra-1_iFcWLcaOI-unsplash.png" src="<?php echo get_template_directory_uri(); ?>/assets/images/mona-eendra-1_iFcWLcaOI-unsplash.png">
+            </div>
+        </div>
+        <div class="swiper-slide">
+            <div id="gallery2">
+              <img alt="image" data-description="image" data-image="<?php echo get_template_directory_uri(); ?>/assets/images/mona-eendra-1_iFcWLcaOI-unsplash.png" src="<?php echo get_template_directory_uri(); ?>/assets/images/mona-eendra-1_iFcWLcaOI-unsplash.png">
+              <img alt="image" data-description="image" data-image="<?php echo get_template_directory_uri(); ?>/assets/images/tim-swaan-eOpewngf68w-unsplash.png" src="<?php echo get_template_directory_uri(); ?>/assets/images/tim-swaan-eOpewngf68w-unsplash.png">
+              <img alt="image" data-description="image" data-image="<?php echo get_template_directory_uri(); ?>/assets/images/pablo-garcia-saldana-PO8hhUKuegI-unsplash.png" scr="<?php echo get_template_directory_uri(); ?>/assets/images/pablo-garcia-saldana-PO8hhUKuegI-unsplash.png">
+              <img alt="image" data-description="image" data-image="<?php echo get_template_directory_uri(); ?>/assets/images/yap-chin-kuan-vpHdVI4jaec-unsplash.png" src="<?php echo get_template_directory_uri(); ?>/assets/images/yap-chin-kuan-vpHdVI4jaec-unsplash.png">
+              <img alt="image" data-description="image" data-image="<?php echo get_template_directory_uri(); ?>/assets/images/luca-bravo-ny6qxqv_m04-unsplash.png" src="<?php echo get_template_directory_uri(); ?>/assets/images/luca-bravo-ny6qxqv_m04-unsplash.png">
+              <img alt="image" data-description="image" data-image="<?php echo get_template_directory_uri(); ?>/assets/images/peter-jan-rijpkema-MRc3pofrhPg-unsplash.png" src="<?php echo get_template_directory_uri(); ?>/assets/images/peter-jan-rijpkema-MRc3pofrhPg-unsplash.png">
+              <img alt="image" data-description="image" data-image="<?php echo get_template_directory_uri(); ?>/assets/images/jason-zeis-msrYP_9jLvQ-unsplash.png" src="<?php echo get_template_directory_uri(); ?>/assets/images/jason-zeis-msrYP_9jLvQ-unsplash.png">
+              <img alt="image" data-description="image" data-image="<?php echo get_template_directory_uri(); ?>/assets/images/anders-jilden-cYrMQA7a3Wc-unsplash.png" src="<?php echo get_template_directory_uri(); ?>/assets/images/anders-jilden-cYrMQA7a3Wc-unsplash.png">
+              <img alt="image" data-description="image" data-image="<?php echo get_template_directory_uri(); ?>/assets/images/paul-trienekens-cYW4ROUmzzQ-unsplash.png" src="<?php echo get_template_directory_uri(); ?>/assets/images/paul-trienekens-cYW4ROUmzzQ-unsplash.png">
+            </div>
+        </div>
+      </div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+    </div>
   </div>
 </section>
 

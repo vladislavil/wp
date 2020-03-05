@@ -1,3 +1,6 @@
+@import '../node_modules/unitegallery/dist/css/unite-gallery.css';
+@import '../node_modules/swiper/css/swiper.min.css';
+
 .header {
    background-color: transparent;
    position: absolute;

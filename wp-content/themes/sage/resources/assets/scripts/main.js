@@ -1,5 +1,6 @@
 // import external dependencies
 import $ from 'jquery';
+import Swiper from 'swiper';
 
 // Import everything from autoload
 import './autoload/**/*'
@@ -26,6 +27,23 @@ jQuery(document).ready(
   () => { 
     routes.loadEvents();
     getDate();
+
+  jQuery("#gallery").unitegallery({
+    gallery_theme: "tiles",
+    tiles_type: "justified",
+    tiles_justified_row_height: 440,
+    lightbox_slider_control_zoom: true,						
+  });
+  jQuery("#gallery1").unitegallery({
+    gallery_theme: "tiles",
+    tiles_type: "justified",
+    tiles_justified_row_height: 440						
+  });
+  jQuery("#gallery2").unitegallery({
+    gallery_theme: "tiles",
+    tiles_type: "justified",
+    tiles_justified_row_height: 440							
+  });
 })
 
 const getDate = () => {
@@ -33,3 +51,13 @@ const getDate = () => {
 
   $date.text(new Date().getFullYear());
 }
+
+var mySwiper = new Swiper('.swiper-container', {
+  speed: 400,
+  spaceBetween: 100,
+  simulateTouch: false,
+  navigation: {
+  nextEl: '.swiper-button-next',
+  prevEl: '.swiper-button-prev'
+  },
+});

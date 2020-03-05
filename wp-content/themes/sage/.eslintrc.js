@@ -1,6 +1,6 @@
 module.exports = {
   'root': true,
-  'extends': 'eslint:recommended',
+  // 'extends': 'eslint:recommended',
   'globals': {
     'wp': true,
   },
@@ -31,18 +31,18 @@ module.exports = {
       '\\.(coffee|scss|css|less|hbs|svg|json)$',
     ],
   },
-  'rules': {
-    'no-console': 0,
-    'quotes': ['error', 'single'],
-    'comma-dangle': [
-      'error',
-      {
-        'arrays': 'always-multiline',
-        'objects': 'always-multiline',
-        'imports': 'always-multiline',
-        'exports': 'always-multiline',
-        'functions': 'ignore',
-      },
-    ],
-  },
+  // 'rules': {
+  //   'no-console': 0,
+  //   'quotes': ['error', 'single'],
+  //   'comma-dangle': [
+  //     'error',
+  //     {
+  //       'arrays': 'always-multiline',
+  //       'objects': 'always-multiline',
+  //       'imports': 'always-multiline',
+  //       'exports': 'always-multiline',
+  //       'functions': 'ignore',
+  //     },
+  //   ],
+  // },
 };
