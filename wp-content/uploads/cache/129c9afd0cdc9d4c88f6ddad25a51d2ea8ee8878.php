@@ -52,15 +52,13 @@
         
         <div class="swiper-slide">
           <div id="gallary<?php echo $index; $index++; ?>">
-            <img alt="image" data-description="image" data-image="<?php $img = get_post_meta($post->ID); echo wp_get_attachment_image_url($img['gallery_img1'][0], 'full') ?>" scr="<?php $img = get_post_meta($post->ID); echo wp_get_attachment_image_url($img['gallery_img1'][0], 'full') ?>">
-            <img alt="image" data-description="image" data-image="<?php $img = get_post_meta($post->ID); echo wp_get_attachment_image_url($img['gallery_img2'][0], 'full') ?>" src="<?php $img = get_post_meta($post->ID); echo wp_get_attachment_image_url($img['gallery_img2'][0], 'full') ?>">
-            <img alt="image" data-description="image" data-image="<?php $img = get_post_meta($post->ID); echo wp_get_attachment_image_url($img['gallery_img3'][0], 'full') ?>" src="<?php $img = get_post_meta($post->ID); echo wp_get_attachment_image_url($img['gallery_img3'][0], 'full') ?>">              
-            <img alt="image" data-description="image" data-image="<?php $img = get_post_meta($post->ID); echo wp_get_attachment_image_url($img['gallery_img4'][0], 'full') ?>" src="<?php $img = get_post_meta($post->ID); echo wp_get_attachment_image_url($img['gallery_img4'][0], 'full') ?>">
-            <img alt="image" data-description="image" data-image="<?php $img = get_post_meta($post->ID); echo wp_get_attachment_image_url($img['gallery_img5'][0], 'full') ?>" src="<?php $img = get_post_meta($post->ID); echo wp_get_attachment_image_url($img['gallery_img5'][0], 'full') ?>">               
-            <img alt="image" data-description="image" data-image="<?php $img = get_post_meta($post->ID); echo wp_get_attachment_image_url($img['gallery_img6'][0], 'full') ?>" src="<?php $img = get_post_meta($post->ID); echo wp_get_attachment_image_url($img['gallery_img6'][0], 'full') ?>">
-            <img alt="image" data-description="image" data-image="<?php $img = get_post_meta($post->ID); echo wp_get_attachment_image_url($img['gallery_img7'][0], 'full') ?>" src="<?php $img = get_post_meta($post->ID); echo wp_get_attachment_image_url($img['gallery_img7'][0], 'full') ?>">
-            <img alt="image" data-description="image" data-image="<?php $img = get_post_meta($post->ID); echo wp_get_attachment_image_url($img['gallery_img8'][0], 'full') ?>" src="<?php $img = get_post_meta($post->ID); echo wp_get_attachment_image_url($img['gallery_img8'][0], 'full') ?>">              
-            <img alt="image" data-description="image" data-image="<?php $img = get_post_meta($post->ID); echo wp_get_attachment_image_url($img['gallery_img9'][0], 'full') ?>" src="<?php $img = get_post_meta($post->ID); echo wp_get_attachment_image_url($img['gallery_img9'][0], 'full') ?>">
+            <?php
+              for( $i = 0; $i < 9; $i++) {
+              $img = get_post_meta($post->ID);
+              $img = wp_get_attachment_image_url($img['gallery_img' . ($i + 1) ][0], 'full');
+              echo '<img alt="image" data-description="image" data-image=' . $img . ' scr=' . $img . '>';
+            }
+            ?>
           </div>
         </div>
 
