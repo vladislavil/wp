@@ -40,19 +40,14 @@ jQuery(document).ready(
     $slide_all.text($count_next.toString().padStart(2,0));
 
     $prev.click(function() {
-      console.log("-1");
       $count_prev -= 1;
       $slide_now.text($count_prev.toString().padStart(2,0));
     });
 
     $next.click(function() {
-      console.log("+1")
       $count_prev += 1;
       $slide_now.text($count_prev.toString().padStart(2,0));
     });
-
-    console.log($count_next);
-    console.log($count_prev);
 
     for( let i = 0; i < $elem.length; i++) {
       $($elem[i]).children().unitegallery({
