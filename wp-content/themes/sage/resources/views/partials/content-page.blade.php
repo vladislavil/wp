@@ -35,48 +35,48 @@
     <!-- Additional required wrapper -->
       <div class="swiper-wrapper">
         <!-- Slides -->
+        @php 
+          $index = 1;
+          $posts = get_posts( array(
+          'numberposts' => -1,
+          'category_name' => 'gallery',
+          'orderby'     => 'date',
+          'order'       => 'DESC',
+          'post_type'   => 'any ',
+          'post_status' => 'any',
+          'suppress_filters' => true ));
+
+          foreach( $posts as $post ){
+            setup_postdata($post);
+        @endphp
+        
         <div class="swiper-slide">
-            <div id="gallery">
-              <img alt="image" data-description="image" data-image="<?php echo get_template_directory_uri(); ?>/assets/images/pablo-garcia-saldana-PO8hhUKuegI-unsplash.png" scr="<?php echo get_template_directory_uri(); ?>/assets/images/pablo-garcia-saldana-PO8hhUKuegI-unsplash.png">
-              <img alt="image" data-description="image" data-image="<?php echo get_template_directory_uri(); ?>/assets/images/yap-chin-kuan-vpHdVI4jaec-unsplash.png" src="<?php echo get_template_directory_uri(); ?>/assets/images/yap-chin-kuan-vpHdVI4jaec-unsplash.png">
-              <img alt="image" data-description="image" data-image="<?php echo get_template_directory_uri(); ?>/assets/images/luca-bravo-ny6qxqv_m04-unsplash.png" src="<?php echo get_template_directory_uri(); ?>/assets/images/luca-bravo-ny6qxqv_m04-unsplash.png">
-              <img alt="image" data-description="image" data-image="<?php echo get_template_directory_uri(); ?>/assets/images/peter-jan-rijpkema-MRc3pofrhPg-unsplash.png" src="<?php echo get_template_directory_uri(); ?>/assets/images/peter-jan-rijpkema-MRc3pofrhPg-unsplash.png">
-              <img alt="image" data-description="image" data-image="<?php echo get_template_directory_uri(); ?>/assets/images/jason-zeis-msrYP_9jLvQ-unsplash.png" src="<?php echo get_template_directory_uri(); ?>/assets/images/jason-zeis-msrYP_9jLvQ-unsplash.png">
-              <img alt="image" data-description="image" data-image="<?php echo get_template_directory_uri(); ?>/assets/images/anders-jilden-cYrMQA7a3Wc-unsplash.png" src="<?php echo get_template_directory_uri(); ?>/assets/images/anders-jilden-cYrMQA7a3Wc-unsplash.png">
-              <img alt="image" data-description="image" data-image="<?php echo get_template_directory_uri(); ?>/assets/images/paul-trienekens-cYW4ROUmzzQ-unsplash.png" src="<?php echo get_template_directory_uri(); ?>/assets/images/paul-trienekens-cYW4ROUmzzQ-unsplash.png">
-              <img alt="image" data-description="image" data-image="<?php echo get_template_directory_uri(); ?>/assets/images/tim-swaan-eOpewngf68w-unsplash.png" src="<?php echo get_template_directory_uri(); ?>/assets/images/tim-swaan-eOpewngf68w-unsplash.png">
-              <img alt="image" data-description="image" data-image="<?php echo get_template_directory_uri(); ?>/assets/images/mona-eendra-1_iFcWLcaOI-unsplash.png" src="<?php echo get_template_directory_uri(); ?>/assets/images/mona-eendra-1_iFcWLcaOI-unsplash.png">
-            </div>
+          <div id="gallary<?php echo $index; $index++; ?>">
+            <img alt="image" data-description="image" data-image="<?php $img = get_post_meta($post->ID); echo wp_get_attachment_image_url($img['gallery_img1'][0], 'full') ?>" scr="<?php $img = get_post_meta($post->ID); echo wp_get_attachment_image_url($img['gallery_img1'][0], 'full') ?>">
+            <img alt="image" data-description="image" data-image="<?php $img = get_post_meta($post->ID); echo wp_get_attachment_image_url($img['gallery_img2'][0], 'full') ?>" src="<?php $img = get_post_meta($post->ID); echo wp_get_attachment_image_url($img['gallery_img2'][0], 'full') ?>">
+            <img alt="image" data-description="image" data-image="<?php $img = get_post_meta($post->ID); echo wp_get_attachment_image_url($img['gallery_img3'][0], 'full') ?>" src="<?php $img = get_post_meta($post->ID); echo wp_get_attachment_image_url($img['gallery_img3'][0], 'full') ?>">              
+            <img alt="image" data-description="image" data-image="<?php $img = get_post_meta($post->ID); echo wp_get_attachment_image_url($img['gallery_img4'][0], 'full') ?>" src="<?php $img = get_post_meta($post->ID); echo wp_get_attachment_image_url($img['gallery_img4'][0], 'full') ?>">
+            <img alt="image" data-description="image" data-image="<?php $img = get_post_meta($post->ID); echo wp_get_attachment_image_url($img['gallery_img5'][0], 'full') ?>" src="<?php $img = get_post_meta($post->ID); echo wp_get_attachment_image_url($img['gallery_img5'][0], 'full') ?>">               
+            <img alt="image" data-description="image" data-image="<?php $img = get_post_meta($post->ID); echo wp_get_attachment_image_url($img['gallery_img6'][0], 'full') ?>" src="<?php $img = get_post_meta($post->ID); echo wp_get_attachment_image_url($img['gallery_img6'][0], 'full') ?>">
+            <img alt="image" data-description="image" data-image="<?php $img = get_post_meta($post->ID); echo wp_get_attachment_image_url($img['gallery_img7'][0], 'full') ?>" src="<?php $img = get_post_meta($post->ID); echo wp_get_attachment_image_url($img['gallery_img7'][0], 'full') ?>">
+            <img alt="image" data-description="image" data-image="<?php $img = get_post_meta($post->ID); echo wp_get_attachment_image_url($img['gallery_img8'][0], 'full') ?>" src="<?php $img = get_post_meta($post->ID); echo wp_get_attachment_image_url($img['gallery_img8'][0], 'full') ?>">              
+            <img alt="image" data-description="image" data-image="<?php $img = get_post_meta($post->ID); echo wp_get_attachment_image_url($img['gallery_img9'][0], 'full') ?>" src="<?php $img = get_post_meta($post->ID); echo wp_get_attachment_image_url($img['gallery_img9'][0], 'full') ?>">
+          </div>
         </div>
-        <div class="swiper-slide">
-            <div id="gallery1">
-              <img alt="image" data-description="image" data-image="<?php echo get_template_directory_uri(); ?>/assets/images/pablo-garcia-saldana-PO8hhUKuegI-unsplash.png" scr="<?php echo get_template_directory_uri(); ?>/assets/images/pablo-garcia-saldana-PO8hhUKuegI-unsplash.png">
-              <img alt="image" data-description="image" data-image="<?php echo get_template_directory_uri(); ?>/assets/images/yap-chin-kuan-vpHdVI4jaec-unsplash.png" src="<?php echo get_template_directory_uri(); ?>/assets/images/yap-chin-kuan-vpHdVI4jaec-unsplash.png">
-              <img alt="image" data-description="image" data-image="<?php echo get_template_directory_uri(); ?>/assets/images/luca-bravo-ny6qxqv_m04-unsplash.png" src="<?php echo get_template_directory_uri(); ?>/assets/images/luca-bravo-ny6qxqv_m04-unsplash.png">
-              <img alt="image" data-description="image" data-image="<?php echo get_template_directory_uri(); ?>/assets/images/peter-jan-rijpkema-MRc3pofrhPg-unsplash.png" src="<?php echo get_template_directory_uri(); ?>/assets/images/peter-jan-rijpkema-MRc3pofrhPg-unsplash.png">
-              <img alt="image" data-description="image" data-image="<?php echo get_template_directory_uri(); ?>/assets/images/jason-zeis-msrYP_9jLvQ-unsplash.png" src="<?php echo get_template_directory_uri(); ?>/assets/images/jason-zeis-msrYP_9jLvQ-unsplash.png">
-              <img alt="image" data-description="image" data-image="<?php echo get_template_directory_uri(); ?>/assets/images/anders-jilden-cYrMQA7a3Wc-unsplash.png" src="<?php echo get_template_directory_uri(); ?>/assets/images/anders-jilden-cYrMQA7a3Wc-unsplash.png">
-              <img alt="image" data-description="image" data-image="<?php echo get_template_directory_uri(); ?>/assets/images/paul-trienekens-cYW4ROUmzzQ-unsplash.png" src="<?php echo get_template_directory_uri(); ?>/assets/images/paul-trienekens-cYW4ROUmzzQ-unsplash.png">
-              <img alt="image" data-description="image" data-image="<?php echo get_template_directory_uri(); ?>/assets/images/tim-swaan-eOpewngf68w-unsplash.png" src="<?php echo get_template_directory_uri(); ?>/assets/images/tim-swaan-eOpewngf68w-unsplash.png">
-              <img alt="image" data-description="image" data-image="<?php echo get_template_directory_uri(); ?>/assets/images/mona-eendra-1_iFcWLcaOI-unsplash.png" src="<?php echo get_template_directory_uri(); ?>/assets/images/mona-eendra-1_iFcWLcaOI-unsplash.png">
-            </div>
-        </div>
-        <div class="swiper-slide">
-            <div id="gallery2">
-              <img alt="image" data-description="image" data-image="<?php echo get_template_directory_uri(); ?>/assets/images/mona-eendra-1_iFcWLcaOI-unsplash.png" src="<?php echo get_template_directory_uri(); ?>/assets/images/mona-eendra-1_iFcWLcaOI-unsplash.png">
-              <img alt="image" data-description="image" data-image="<?php echo get_template_directory_uri(); ?>/assets/images/tim-swaan-eOpewngf68w-unsplash.png" src="<?php echo get_template_directory_uri(); ?>/assets/images/tim-swaan-eOpewngf68w-unsplash.png">
-              <img alt="image" data-description="image" data-image="<?php echo get_template_directory_uri(); ?>/assets/images/pablo-garcia-saldana-PO8hhUKuegI-unsplash.png" scr="<?php echo get_template_directory_uri(); ?>/assets/images/pablo-garcia-saldana-PO8hhUKuegI-unsplash.png">
-              <img alt="image" data-description="image" data-image="<?php echo get_template_directory_uri(); ?>/assets/images/yap-chin-kuan-vpHdVI4jaec-unsplash.png" src="<?php echo get_template_directory_uri(); ?>/assets/images/yap-chin-kuan-vpHdVI4jaec-unsplash.png">
-              <img alt="image" data-description="image" data-image="<?php echo get_template_directory_uri(); ?>/assets/images/luca-bravo-ny6qxqv_m04-unsplash.png" src="<?php echo get_template_directory_uri(); ?>/assets/images/luca-bravo-ny6qxqv_m04-unsplash.png">
-              <img alt="image" data-description="image" data-image="<?php echo get_template_directory_uri(); ?>/assets/images/peter-jan-rijpkema-MRc3pofrhPg-unsplash.png" src="<?php echo get_template_directory_uri(); ?>/assets/images/peter-jan-rijpkema-MRc3pofrhPg-unsplash.png">
-              <img alt="image" data-description="image" data-image="<?php echo get_template_directory_uri(); ?>/assets/images/jason-zeis-msrYP_9jLvQ-unsplash.png" src="<?php echo get_template_directory_uri(); ?>/assets/images/jason-zeis-msrYP_9jLvQ-unsplash.png">
-              <img alt="image" data-description="image" data-image="<?php echo get_template_directory_uri(); ?>/assets/images/anders-jilden-cYrMQA7a3Wc-unsplash.png" src="<?php echo get_template_directory_uri(); ?>/assets/images/anders-jilden-cYrMQA7a3Wc-unsplash.png">
-              <img alt="image" data-description="image" data-image="<?php echo get_template_directory_uri(); ?>/assets/images/paul-trienekens-cYW4ROUmzzQ-unsplash.png" src="<?php echo get_template_directory_uri(); ?>/assets/images/paul-trienekens-cYW4ROUmzzQ-unsplash.png">
-            </div>
-        </div>
+
+        @php
+        }
+            wp_reset_postdata(); // сброс
+        @endphp
       </div>
-      <div class="swiper-button-prev"></div>
-      <div class="swiper-button-next"></div>
+      <div class="nav-wrapper">
+        <div class="swiper-button-prev"></div>
+        <div class="nav-content">
+          <span class="slide-now"></span>
+          <span class="slide-all"></span>
+        </div>
+        <div class="swiper-button-next"></div>
+      </div>
     </div>
   </div>
 </section>

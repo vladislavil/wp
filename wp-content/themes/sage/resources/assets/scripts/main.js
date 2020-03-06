@@ -27,23 +27,40 @@ jQuery(document).ready(
   () => { 
     routes.loadEvents();
     getDate();
+    // toString().padStart(2,0) // преобразовать целое число в формат хх
+    let $elem = jQuery(".swiper-slide");
+    let $prev = $('.swiper-button-prev');
+    let $next = $('.swiper-button-next');
+    let $slide_now = $('.slide-now');
+    let $slide_all = $('.slide-all');
+    let $count_prev = 1;
+    let $count_next = $elem.length;
 
-  jQuery("#gallery").unitegallery({
-    gallery_theme: "tiles",
-    tiles_type: "justified",
-    tiles_justified_row_height: 440,
-    lightbox_slider_control_zoom: true,						
-  });
-  jQuery("#gallery1").unitegallery({
-    gallery_theme: "tiles",
-    tiles_type: "justified",
-    tiles_justified_row_height: 440						
-  });
-  jQuery("#gallery2").unitegallery({
-    gallery_theme: "tiles",
-    tiles_type: "justified",
-    tiles_justified_row_height: 440							
-  });
+    $slide_now.text($count_prev.toString().padStart(2,0));
+    $slide_all.text($count_next.toString().padStart(2,0));
+
+    $prev.click(function() {
+      console.log("-1");
+      $count_prev -= 1;
+      $slide_now.text($count_prev.toString().padStart(2,0));
+    });
+
+    $next.click(function() {
+      console.log("+1")
+      $count_prev += 1;
+      $slide_now.text($count_prev.toString().padStart(2,0));
+    });
+
+    console.log($count_next);
+    console.log($count_prev);
+
+    for( let i = 0; i < $elem.length; i++) {
+      $($elem[i]).children().unitegallery({
+        gallery_theme: "tiles",
+        tiles_type: "justified",
+        tiles_justified_row_height: 440							
+      });
+    }
 })
 
 const getDate = () => {
