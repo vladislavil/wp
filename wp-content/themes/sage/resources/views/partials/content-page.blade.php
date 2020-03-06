@@ -54,10 +54,10 @@
           <div id="gallary<?php echo $index; $index++; ?>">
             @php
               for( $i = 0; $i < 9; $i++) {
-              $img = get_post_meta($post->ID);
-              $img = wp_get_attachment_image_url($img['gallery_img' . ($i + 1) ][0], 'full');
-              echo '<img alt="image" data-description="image" data-image=' . $img . ' scr=' . $img . '>';
-            }
+                $img = get_post_meta($post->ID);
+                $img = wp_get_attachment_image_url($img['gallery_img' . ($i + 1) ][0], 'full');
+                echo '<img alt="image" data-description="image" data-image=' . $img . ' scr=' . $img . '>';
+              }
             @endphp
           </div>
         </div>
