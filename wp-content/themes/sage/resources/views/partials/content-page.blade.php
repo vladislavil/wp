@@ -37,6 +37,7 @@
         <!-- Slides -->
         @php 
           $index = 1;
+          $img;
           $posts = get_posts( array(
           'numberposts' => -1,
           'category_name' => 'gallery',
